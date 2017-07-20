@@ -5,10 +5,76 @@
 	<title>Kevin Lee - Portfolio</title>
 
 	<!-- Here we include bootstrap. This will be made available to all of the generated HTML/JS that React generates-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./MDB Free/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./MDB Free/css/mdb.min.css">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./MDB Free/sass/mdb.scss">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-
+<style>
+	html,
+	body,
+	header,
+	section,
+	.view {
+		height: 100%;
+	}
+	.navbar {
+		background-color: transparent;
+		color: black;
+	}
+	.top-nav-collapse {
+		background-color: black;
+	}
+	header .view {
+		background: url("https://www.xmple.com/wallpaper/blue-pink-gradient-linear-1280x720-c2-ff69b4-87ceeb-a-15-f-14.svg")no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 36em;
+	}
+	section {
+	height: 30em;
+	}
+	#nameView {
+		font-family: Montserrat, Helvetica,Arial, sans-serif;
+		font-size: 95px;
+		font-style: normal;
+		font-weight: bold;
+		letter-spacing: -1.5px;
+		line-height: 115px;
+		text-transform: lowercase;
+		color: #FFFFFF;
+	}
+	@media (max-width: 768px) {
+		.full-bg-img,
+		.view {
+			height: auto;
+			position: relative;
+		}
+	}
+	#gallery > .row > .card {
+		margin: 10px;
+		width: 285px;
+	}
+	.galleryItems {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+	#contactForm {
+		margin: 175px 150px;
+	}
+	footer {
+		height: 80px;
+		color: white;
+		background-color: black;
+	}
+	.footerTxt {
+		padding: 1em;
+	}
+</style>
 <body>
 	
 	<!-- This is where React will deploy the contents it generates -->
@@ -19,5 +85,12 @@
 		crossorigin="anonymous">
 	</script>
 	<script src="./bundle.js"></script>
+	<script src="./MDB Free/js/tether.min.js"></script>
+	<script src="./MDB Free/js/bootstrap.min.js"></script>
+	<script src="./MDB Free/js/jquery-3.1.1.min.js"></script>
+	<script src="./MDB Free/js/mdb.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
