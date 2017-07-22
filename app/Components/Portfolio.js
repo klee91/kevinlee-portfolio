@@ -119,20 +119,20 @@ var Portfolio = React.createClass({
                                     <h3><i className="fa fa-envelope"></i> Contact Me:</h3>
                                     <hr/>
                                 </div>
-                                <form action="mailto:lee.kev1991@gmail.com" encType="text/plain">
+                                <form action="https://formspree.io/lee.kev1991@gmail.com" method="POST" id="emailForm">
                                 <div className="md-form">
                                     <i className="fa fa-user prefix"></i>
-                                    <input type="text" id="form3" className="form-control"/>
+                                    <input type="text" id="form3" className="form-control" name="name"/>
                                     <label htmlFor="form3">Your name</label>
                                 </div>
                                 <div className="md-form">
                                     <i className="fa fa-envelope prefix"></i>
-                                    <input type="text" id="form2" className="form-control"/>
+                                    <input type="text" id="form2" className="form-control" name ="_replyto"/>
                                     <label htmlFor="form2">Your email</label>
                                 </div>
                                 <div className="md-form">
                                     <i className="fa fa-pencil prefix"></i>
-                                    <textarea type="text" id="form8" className="md-textarea"></textarea>
+                                    <textarea type="text" id="form8" className="md-textarea" name="message"></textarea>
                                     <label htmlFor="form8">Your message</label>
                                 </div>
 
