@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Portfolio = require("./Portfolio.js");
+import Portfolio from "./Portfolio.js";
 
 ReactDOM.render(<Portfolio />, document.getElementById('app'))

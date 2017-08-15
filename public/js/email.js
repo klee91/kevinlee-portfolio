@@ -10,6 +10,7 @@ $contactForm.submit(function(e) {
 			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
 		},
 		success: function(data) {
+            $("#emailSuccessModal").css("opacity",1);
 			$contactForm.find('.alert--loading').hide();
 			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
 		},

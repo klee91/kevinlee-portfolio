@@ -1,44 +1,13 @@
-var React = require('react');
+import React from 'react';
 
-var Portfolio = React.createClass({
+class Portfolio extends React.Component{
 
-    render: function() {
+    render() {
         return (
             <div>
 
             {/* Header */}
             <header>
-                {/* Navbar */}
-                <nav className="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar" >
-                    <div className="container">
-                        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNav1" >
-                            <ul className="navbar-nav mr-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#home">Home <span className="sr-only">(current)</span></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#gallery">Gallery</a>
-                                </li>
-                            </ul>
-
-                            <ul className="nav navbar-nav nav-flex-icons ml-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.facebook.com/kevlee91"><i className="fa fa-facebook"></i></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.linkedin.com/in/kevin-lee-03918457/"><i className="fa fa-linkedin"></i></a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://www.instagram.com/micklee__/"><i className="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
                 {/* View */}
                 <div className="view">
                     <div className="full-bg-img flex-center">
@@ -47,9 +16,9 @@ var Portfolio = React.createClass({
 
                                 <div className="col-lg-6">
                                     <div className="description">
-                                        <h2 className="h2-responsive wow fadeInLeft">Welcome, you have reached </h2><h2 id="nameView"  className="h2-responsive wow fadeIn">Kevin Lee</h2>
+                                        <h2 className="h2-responsive wow fadeInLeft" style={{color:'white'}}>Welcome, you have reached </h2><h2 id="nameView"  className="h2-responsive wow fadeIn">Kevin Lee</h2>
                                         <hr className="hr-light"/>
-                                        <p className="wow fadeInLeft" data-wow-delay="0.4s">This is my Portfolio. Here you will find all my works in web development. Take a stroll and please feel free to contact me. Enjoy!</p>
+                                        <p className="wow fadeInLeft" data-wow-delay="0.4s" style={{color:'white'}}>This is my Portfolio. Here you will find all my works in web development. Take a stroll and please feel free to contact me. Enjoy!</p>
                                         <br/>
                                         <a className="btn btn-white-outline btn-lg wow fadeInLeft" data-wow-delay="0.7s" href="#contactForm">Contact Me</a>
 
@@ -143,14 +112,44 @@ var Portfolio = React.createClass({
                             </div>
                         </div>
             </section>
+            
+            {/* Success Modal */}
+            <div className="modal fade bottom" id="emailSuccessModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div className="modal-dialog modal-frame modal-bottom" role="document">
+                <div className="modal-content">
+                    <div className="modal-body">
+                        <p>Your message has successfully been sent!</p>
+                        
+                        <button type="button" className="btn btn-secondary waves-effect waves-light" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+            </div>
 
             {/* Footer */}
-            <footer className="footer">
-                <p className="footerTxt text-center">Thanks for visiting!</p>
-            </footer>
+             <footer className="page-footer center-on-small-only">
+                <div className="text-center footTxt">
+                    Follow Me:
+                </div>
+                <hr/>
+                <div className="text-center mb-3">
+
+                    <a className="socialBtn btn-fb" href="https://www.facebook.com/kevlee91" target="_blank"><i className="fa fa-facebook" > </i></a>
+                    <a className="socialBtn btn-li" href="https://www.linkedin.com/in/kevin-lee-03918457/" target="_blank"><i className="fa fa-linkedin"> </i></a>
+                    <a className="socialBtn btn-git" href="https://www.github.com/klee91" target="_blank"><i className="fa fa-github"> </i></a>
+                    <a className="socialBtn btn-ins" href="https://www.instagram.com/micklee__/" target="_blank"><i className="fa fa-instagram"> </i></a>
+
+                </div>
+
+                <div className="footer-copyright">
+                    <div>
+                        Thanks for visiting!
+                    </div>
+                </div>
+            </footer> 
             </div>
         );
     }
-});
+}
 
-module.exports = Portfolio;
+export default Portfolio;

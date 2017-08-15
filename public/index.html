@@ -19,15 +19,16 @@
 	.view {
 		height: 100%;
 	}
-	.navbar {
-		background-color: transparent;
-		color: black;
-	}
 	.top-nav-collapse {
 		background-color: black;
 	}
 	header .view {
-		background: url("https://www.xmple.com/wallpaper/blue-pink-gradient-linear-1280x720-c2-ff69b4-87ceeb-a-15-f-14.svg")no-repeat center center fixed;
+		/* background: url("https://www.xmple.com/wallpaper/blue-pink-gradient-linear-1280x720-c2-ff69b4-87ceeb-a-15-f-14.svg")no-repeat center center fixed; */
+		background: #895a7d; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #895a7d 0%, #103e54 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #895a7d 0%,#103e54 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #895a7d 0%,#103e54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#895a7d', endColorstr='#103e54',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -66,13 +67,15 @@
 	#contactForm {
 		margin: 175px 150px;
 	}
-	footer {
-		height: 80px;
-		color: white;
-		background-color: black;
+	.socialBtn {
+		padding: 1em;
 	}
 	.footerTxt {
 		padding: 1em;
+	}
+	.modal-dialog.show{
+		opacity:1;
+		pointer-events:auto;
 	}
 </style>
 <body>
