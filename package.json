@@ -12,7 +12,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "vivus": "^0.4.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
